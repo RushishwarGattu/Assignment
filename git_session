@@ -1,0 +1,964 @@
+Script started on 2022-01-29 14:58:05+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ ls
+README.md
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ 
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ echo hi [K[K[K" this is a text file">> t[Kfe[Kile1txt[K[K[K[K[Ke.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mfile.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add file.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   file.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "new file added"
+[main 58a59da] new file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Warning: Permanently added the ECDSA host key for IP address '13.234.176.102' to the list of known hosts.
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:GattuRushishwar/git_assign.git
+   cf663f6..58a59da  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano t[Kfile1.txt[K[K[K[K[K.txt
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 4.8                        file.txt                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2;2H[39;49m(B[mthis is a text file[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m7[2;21r8[2dM[1;24r[3;1H[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[4d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lt[?12l[?25h[?25lh[22d[K[4dth[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: file.txt                                                    [22;1H(B[m[22;29H[?12l[?25h[?25l[22;30H[?12l[?25h[?25l(B[0;7mSave file under DIFFERENT NAME?[23d Y(B[m Yes[K[24d(B[0;7m N(B[m No    [17G(B[0;7m^C(B[m Cancel[K[22;33H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: file.txt   (B[m[22;30H[?12l[?25h[?25l   [1K (B[0;7m[ Cancelled ](B[m[K[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[4;15H[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: file.txt                                                    [22;1H(B[m[22;29H[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 3 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[4;15H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   file.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   file.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "added another line in file"
+[main 036bcd2] added another line in file
+ 1 file changed, 2 insertions(+)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:GattuRushishwar/git_assign.git
+   58a59da..036bcd2  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status -s
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status --short
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ cat .gitignore
+cat: .gitignore: No such file or directory
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano .gitignore
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                       .gitignore                                 [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2d*[?12l[?25h[?25l.[?12l[?25h[?25l[[?12l[?25h[?25lo[?12l[?25h[?25la[?12l[?25h[?25l][?12l[?25h[?25l[3d[?12l[?25h[?25l*[?12l[?25h[?25l~[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: .gitignore                                                  [22;1H(B[m[22;31H[?12l[?25h[?25l  [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 2 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d*~[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gitignore[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add ,[K.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   .gitignore[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "added .gitignorefile[K[K[K[K file"
+[main 33f4468] added .gitignore file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:GattuRushishwar/git_assign.git
+   036bcd2..33f4468  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ cat .gitignore
+*.[oa]
+*~
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano README.md 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 4.8                       README.md                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m[36m# git_assign[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: README.md                                                   [22;1H(B[m[22;30H[?12l[?25h[?25l   [1K (B[0;7m[ Writing... ](B[m[K[1;79H[22;33H(B[0;7m[ Wrote 1 line ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ GIT STA[K[K[K[K[K[K[KGIT[K[K[Kgit status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add[K[K[K[K[K[K[Knano r[KREADME.md 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 4.8                       README.md                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m[36m# git_assign[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2;13H[36mM[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36mm[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: README.md                                                   [22;1H(B[m[22;30H[?12l[?25h[?25l[22;31H[?12l[?25h[?25l[22;31H[?12l[?25h[?25l(B[0;7mSave file under DIFFERENT NAME?[23d Y(B[m Yes[K[24d(B[0;7m N(B[m No    [17G(B[0;7m^C(B[m Cancel[K[22;33H[?12l[?25h[?25l[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: README.md  (B[m[22;31H[?12l[?25h[?25l(B[0;7mSave file under DIFFERENT NAME?[23d Y(B[m Yes[K[24d(B[0;7m N(B[m No    [17G(B[0;7m^C(B[m Cancel[K[22;33H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: README.md  (B[m[22;31H[?12l[?25h[?25l  [1K (B[0;7m[ Cancelled ](B[m[K[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2;17H[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: README.md                                                   [22;1H(B[m[22;30H[?12l[?25h[?25l   [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;33H(B[0;7m[ Wrote 1 line ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2;17H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   README.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano file.txt 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 3 lines ](B[m[H(B[0;7m  GNU nano 4.8                        file.txt                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3;2H[39;49m(B[mthis is a text file[4dthis is a line[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[5d[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[22d[K[5;10H[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: file.txt                                                    [22;1H(B[m[22;29H[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 4 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[5;16H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   README.md[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   file.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git diff
+[?1h=[1mdiff --git a/file.txt b/file.txt[m[m
+[1mindex a3a5492..b82c575 100644[m[m
+[1m--- a/file.txt[m[m
+[1m+++ b/file.txt[m[m
+[36m@@ -1,3 +1,4 @@[m[m
+ [m[m
+  this is a text file[m[m
+ this is a line[m[m
+[32m+[m[32medited the file[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano fil[K[K[K[K[K[K[K[Kgit status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   README.md[m
+	[32mmodified:   file.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano file.txt 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 4.8                        file.txt                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3;2H[39;49m(B[mthis is a text file[4dthis is a line[5dedited the file[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[5;15H [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [22d[K[5;8H[?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: file.txt                                                    [22;1H(B[m[22;29H[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 4 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[5d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git diff
+[?1h=[1mdiff --git a/file.txt b/file.txt[m[m
+[1mindex b82c575..aa1ce8c 100644[m[m
+[1m--- a/file.txt[m[m
+[1m+++ b/file.txt[m[m
+[36m@@ -1,4 +1,4 @@[m[m
+ [m[m
+  this is a text file[m[m
+ this is a line[m[m
+[31m-edited the file[m[m
+[41m+[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git --di[K[K[K[Kdiff --cached
+[?1h=[1mdiff --git a/README.md b/README.md[m[m
+[1mindex 1c30da1..38f35d3 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -1 +1 @@[m[m
+[31m-# git_assign[m[m
+[32m+[m[32m# git_assignment[m[m
+[1mdiff --git a/file.txt b/file.txt[m[m
+[1mindex a3a5492..b82c575 100644[m[m
+[1m--- a/file.txt[m[m
+[1m+++ b/file.txt[m[m
+[36m@@ -1,3 +1,4 @@[m[m
+ [m[m
+  this is a text file[m[m
+ this is a line[m[m
+[32m+[m[32medited the file[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commk[Kit -m "made changes"
+[main 592eb94] made changes
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 382 bytes | 382.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:GattuRushishwar/git_assign.git
+   33f4468..592eb94  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ na[K[Ktouch ten[Kmp.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   file.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtemp.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ gitcomm[K[K[K[K commit -a -m "added a temp file"
+[main b4abef4] added a temp file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git stauts[K[K[K[Katus
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtemp.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .[Kstatuscommit -a -m "added a temp file"
+[main 4273ea9] added a temp file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 temp.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 565 bytes | 565.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To github.com:GattuRushishwar/git_assign.git
+   592eb94..4273ea9  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ rm temp.txt 
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    temp.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "deleted the temp file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    temp.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "deleted the temp file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    temp.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Everything up-to-date
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ rm temp.txt
+rm: cannot remove 'temp.txt': No such file or directory
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ ls
+file.txt  README.md
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ giut[K[Kt mv r[KREADME.md README
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ GIT STATUS[K[K[K[K[K[K[K[K[K[Kgit status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mrenamed:    README.md -> README[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    temp.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git restore[K[K[K[K[K[K[Krm temp.txt
+rm 'temp.txt'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ ls
+file.txt  README
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ stat[K[K[K[Kgit status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mrenamed:    README.md -> README[m
+	[32mdeleted:    temp.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ go[Kit add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mrenamed:    README.md -> README[m
+	[32mdeleted:    temp.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ s[Kgit commit "d[Kmade[K[K[K[Krenamed af[K file and deleteed[K[Kd temp.txt "[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C t "renamed a file and deleted temp.txt"[A(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ [C[C[C[C[C[C[C[C[C[Ct "renamed a file and deleted temp.txt"[K[A(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ [C[C[C[C[C[C[C[C[C[C[C "renamed a file and deleted temp.txt"[A(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ [C[C[C[C[C[C[C[C[C[C[C- "renamed a file and deleted temp.txt"[A(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cm "renamed a file and deleted temp.txt"[A(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C "renamed a file and deleted temp.txt"[A(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[main 8ba27a2] renamed a file and deleted temp.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename README.md => README (100%)
+ delete mode 100644 temp.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)Writing objects: 100% (2/2)Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:GattuRushishwar/git_assign.git
+   4273ea9..8ba27a2  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log
+[?1h=[33mcommit 8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:36:11 2022 +0530[m
+[m
+    renamed a file and deleted temp.txt[m
+[m
+[33mcommit 4273ea9c7e38f7a5170ecb781f824c0b06b4b5b9[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:29:36 2022 +0530[m
+[m
+    added a temp file[m
+[m
+[33mcommit b4abef416dabbb98e3b85887665f52b879149874[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:28:51 2022 +0530[m
+[m
+    added a temp file[m
+[m
+[33mcommit 592eb9492a9d814e0581ffd92c2a98ff6e5291ca[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:26:34 2022 +0530[m
+[m
+    made changes[m
+:[K[K[m
+:[K[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log -p
+[?1h=[33mcommit 8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:36:11 2022 +0530[m
+[m
+    renamed a file and deleted temp.txt[m
+[m
+[1mdiff --git a/README.md b/README[m[m
+[1msimilarity index 100%[m[m
+[1mrename from README.md[m[m
+[1mrename to README[m[m
+[1mdiff --git a/temp.txt b/temp.txt[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex e69de29..0000000[m[m
+[m
+[33mcommit 4273ea9c7e38f7a5170ecb781f824c0b06b4b5b9[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:29:36 2022 +0530[m
+[m
+    added a temp file[m
+[m
+[1mdiff --git a/temp.txt b/temp.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+:[K[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log -p 
+[?1h=[33mcommit 8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:36:11 2022 +0530[m
+[m
+    renamed a file and deleted temp.txt[m
+[m
+[1mdiff --git a/README.md b/README[m[m
+[1msimilarity index 100%[m[m
+[1mrename from README.md[m[m
+[1mrename to README[m[m
+[1mdiff --git a/temp.txt b/temp.txt[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex e69de29..0000000[m[m
+[m
+[33mcommit 4273ea9c7e38f7a5170ecb781f824c0b06b4b5b9[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:29:36 2022 +0530[m
+[m
+    added a temp file[m
+[m
+[1mdiff --git a/temp.txt b/temp.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log -p 2
+fatal: ambiguous argument '2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log --stat
+[?1h=[33mcommit 8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:36:11 2022 +0530[m
+[m
+    renamed a file and deleted temp.txt[m
+[m
+ README.md => README | 0[m
+ temp.txt            | 0[m
+ 2 files changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit 4273ea9c7e38f7a5170ecb781f824c0b06b4b5b9[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:29:36 2022 +0530[m
+[m
+    added a temp file[m
+[m
+ temp.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit b4abef416dabbb98e3b85887665f52b879149874[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:28:51 2022 +0530[m
+[m
+:[K[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log --pretty=oneline
+[?1h=[33m8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m renamed a f[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m[mile and deleted temp.txt[m
+[33m4273ea9c7e38f7a5170ecb781f824c0b06b4b5b9[m added a temp file[m
+[33mb4abef416dabbb98e3b85887665f52b879149874[m added a temp file[m
+[33m592eb9492a9d814e0581ffd92c2a98ff6e5291ca[m made changes[m
+[33m33f4468313823a5a39667d3e89ca1bf141446397[m added .gitignore file[m
+[33m036bcd2ec1fc0535aab2dc324b00c48c22c91078[m added another line in file[m
+[33m58a59da092d01ea2f8a597186c304bf05d67ff1e[m new file added[m
+[33mcf663f674bc035416f578b23fb7f1e5be40c0d87[m first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log --pretty=oneline[K[K[K[K[K[K[Kformat:"%h-%an-%ar :%s"
+[?1h=8ba27a2-GattuRushishwar-5 minutes ago :renamed a file and deleted temp.txt[m
+4273ea9-GattuRushishwar-11 minutes ago :added a temp file[m
+b4abef4-GattuRushishwar-12 minutes ago :added a temp file[m
+592eb94-GattuRushishwar-14 minutes ago :made changes[m
+33f4468-GattuRushishwar-27 minutes ago :added .gitignore file[m
+036bcd2-GattuRushishwar-33 minutes ago :added another line in file[m
+58a59da-GattuRushishwar-36 minutes ago :new file added[m
+cf663f6-GattuRushishwar-89 minutes ago :first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit --amend
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;32H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 4.8       /home/rushi/git_assign/.git/COMMIT_EDITMSG                 [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[mrenamed a file and deleted temp.txt[4d[36m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d#[7d# Date:      Sat Jan 29 15:36:11 2022 +0530[8d#[9d# On branch main[10d# Your branch is up to date with 'origin/main'.[11d#[12d# Changes to be committed:[13d#       renamed:    README.md -> README[14d#       deleted:    temp.txt[15d#[2d[39m(B[m[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: /home/rushi/git_assign/.git/COMMIT_EDITMSG                  [22;1H(B[m[22;63H[?12l[?25h[?25l[22;33H[1K (B[0;7m[ Writing... ](B[m[K[1;79H[22;32H(B[0;7m[ Wrote 14 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[K[main 2b2d759] renamed a file and deleted temp.txt
+ Date: Sat Jan 29 15:36:11 2022 +0530
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename README.md => README (100%)
+ delete mode 100644 temp.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ NANO [K[K[K[K[Kano[K[K[Knano rea[K[K[KREAD[K[K[K[K[K[K[K[K[Kmv README re[K[K[K README.MD[K[KMD[K[Kmd
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano file.txt 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 4.8                        file.txt                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3;2H[39;49m(B[mthis is a text file[4dthis is a line[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[5d[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lo[22d[K[5;10H[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: file.txt                                                    [22;1H(B[m[22;29H[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 5 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[5;19H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mrenamed:    README -> README.md[m
+	[32mmodified:   file.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git reset HEAD FILE[K[K[K[K[K[K[K[K[KHEAD FIL[K[K[Kfile.txt
+Unstaged changes after reset:
+M	file.txt
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano file.txt 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 5 lines ](B[m[H(B[0;7m  GNU nano 4.8                        file.txt                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3;2H[39;49m(B[mthis is a text file[4dthis is a line[5dadded another line[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[22d[K[6d[?12l[?25h[?25l[5;19H[?12l[?25h[?25l[?12l[?25h[?25le[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[5;18H [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: file.txt                                                    [22;1H(B[m[22;29H[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 5 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[5d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git ad [Kd .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ gits[K status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mrenamed:    README -> README.md[m
+	[32mmodified:   file.txt[m
+
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "um[Knstaged ans[Kd staged"
+[main 85cc32f] unstaged and staged
+ 2 files changed, 1 insertion(+)
+ rename README => README.md (100%)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+To github.com:GattuRushishwar/git_assign.git
+ [31m! [rejected]       [m main -> main (non-fast-forward)
+[31merror: failed to push some refs to 'git@github.com:GattuRushishwar/git_assign.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ gitnpu[K[K[K pull
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 6 lines ](B[m[H(B[0;7m  GNU nano 4.8         /home/rushi/git_assign/.git/MERGE_MSG                    [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[mMerge branch 'main' of github.com:GattuRushishwar/git_assign into main[3d[36m# Please enter a commit message to explain why this merge is necessary,[4d# especially if it merges an updated upstream into a topic branch.[5d#[6d# Lines starting with '#' will be ignored, and an empty message aborts[7d# the commit.[2d[39m(B[m[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: /home/rushi/git_assign/.git/MERGE_MSG                       [22;1H(B[m[22;58H[?12l[?25h[?25l[22;33H[1K (B[0;7m[ Writing... ](B[m[K[1;79H[22;32H(B[0;7m[ Wrote 6 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[KMerge made by the 'recursive' strategy.
+ README.md => README | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename README.md => README (100%)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ 
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git c[K add ,[K.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 10, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 748 bytes | 748.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:GattuRushishwar/git_assign.git
+   8ba27a2..d8ca060  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git remote -v
+origin	git@github.com:GattuRushishwar/git_assign.git (fetch)
+origin	git@github.com:GattuRushishwar/git_assign.git (push)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git remote add nr git@github.com:GattuRushishwar/git_assign.git
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ ls
+file.txt  README
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git fetch pb
+fatal: 'pb' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git fetch nr
+From github.com:GattuRushishwar/git_assign
+ * [new branch]      main       -> nr/main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git remote show origin
+* remote origin
+  Fetch URL: git@github.com:GattuRushishwar/git_assign.git
+  Push  URL: git@github.com:GattuRushishwar/git_assign.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git remore[K[K[K[K[K[K[K[K[K[Kls
+file.txt  README
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git remote removw [K[Ke nr
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git tag
+[?1h=[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git tag -j[Kl
+[?1h=[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git tag -a tg -m "new tag"
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git show tg
+[?1h=[33mtag tg[m[m
+Tagger: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 16:20:10 2022 +0530[m
+[m
+new tag[m
+[m
+[33mcommit d8ca06082d8fdf01fd124c444c633b0db1eca1d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;33mtag: tg[m[33m, [m[1;31morigin/m[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;31main[m[33m)[m[m
+Merge: 85cc32f 8ba27a2[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 16:06:16 2022 +0530[m
+[m
+    Merge branch 'main' of github.com:GattuRushishwar/git_assign into main[m
+[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git tag lw
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git show lw
+[?1h=[33mcommit d8ca06082d8fdf01fd124c444c633b0db1eca1d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;33mtag: tg[m[33m, [m[1;33mtag: lw[m[33m,[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;33m[m[33m [m[1;31morigin/main[m[33m)[m[m
+Merge: 85cc32f 8ba27a2[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 16:06:16 2022 +0530[m
+[m
+    Merge branch 'main' of github.com:GattuRushishwar/git_assign into main[m
+[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log --pretty=oneline
+[?1h=[33md8ca06082d8fdf01fd124c444c633b0db1eca1d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;33mtag: tg[m[33m, [m[1;33mtag: lw[m[33m, [m[1;31morigin[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;33m[m[33m[m[1;31m/main[m[33m)[m Merge branch 'main' of github.com:GattuRushishwar/git_assign into main[m
+[33m85cc32fe586e28821beab01162f458628d8ca33a[m unstaged and staged[m
+[33m2b2d75916b1c1c07e9bf6ded9d2d3b573b49dbd5[m renamed a file and deleted temp.txt[m
+[33m8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m renamed a file and deleted temp.txt[m
+[33m4273ea9c7e38f7a5170ecb781f824c0b06b4b5b9[m added a temp file[m
+[33mb4abef416dabbb98e3b85887665f52b879149874[m added a temp file[m
+[33m592eb9492a9d814e0581ffd92c2a98ff6e5291ca[m made changes[m
+[33m33f4468313823a5a39667d3e89ca1bf141446397[m added .gitignore file[m
+[33m036bcd2ec1fc0535aab2dc324b00c48c22c91078[m added another line in file[m
+[33m58a59da092d01ea2f8a597186c304bf05d67ff1e[m new file added[m
+[33mcf663f674bc035416f578b23fb7f1e5be40c0d87[m first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ gu[Kit tag v1[K[Ka[K-a v1 58a59da
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 5 lines ](B[m[H(B[0;7m  GNU nano 4.8        /home/rushi/git_assign/.git/TAG_EDITMSG                   [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m[36m#[4d# Write a message for tag:[5d#   v1[6d# Lines starting with '#' will be ignored.[2d[39m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2dt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25lg[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: /home/rushi/git_assign/.git/TAG_EDITMSG                     [22;1H(B[m[22;60H[?12l[?25h[?25l[22;33H[1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 5 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2;14H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[K(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git tag
+[?1h=lw[m
+tg[m
+v1[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git tag -a v1 58a59dalog --pretty=oneline
+[?1h=[33md8ca06082d8fdf01fd124c444c633b0db1eca1d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;33mtag: tg[m[33m, [m[1;33mtag: lw[m[33m, [m[1;31morigin[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;33m[m[33m[m[1;31m/main[m[33m)[m Merge branch 'main' of github.com:GattuRushishwar/git_assign into main[m
+[33m85cc32fe586e28821beab01162f458628d8ca33a[m unstaged and staged[m
+[33m2b2d75916b1c1c07e9bf6ded9d2d3b573b49dbd5[m renamed a file and deleted temp.txt[m
+[33m8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m renamed a file and deleted temp.txt[m
+[33m4273ea9c7e38f7a5170ecb781f824c0b06b4b5b9[m added a temp file[m
+[33mb4abef416dabbb98e3b85887665f52b879149874[m added a temp file[m
+[33m592eb9492a9d814e0581ffd92c2a98ff6e5291ca[m made changes[m
+[33m33f4468313823a5a39667d3e89ca1bf141446397[m added .gitignore file[m
+[33m036bcd2ec1fc0535aab2dc324b00c48c22c91078[m added another line in file[m
+[33m58a59da092d01ea2f8a597186c304bf05d67ff1e[m[33m ([m[1;33mtag: v1[m[33m)[m new file added[m
+[33mcf663f674bc035416f578b23fb7f1e5be40c0d87[m first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push origin v`1[K[K1
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1)Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1)Writing objects: 100% (1/1), 165 bytes | 165.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To github.com:GattuRushishwar/git_assign.git
+ * [new tag]         v1 -> v1
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push origin --delete v1
+To github.com:GattuRushishwar/git_assign.git
+ - [deleted]         v1
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout v1
+Note: switching to 'v1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 58a59da new file added
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch testing
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log --oneline --decorate
+[?1h=[33m58a59da[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: v1[m[33m, [m[1;32mtesting[m[33m)[m new file added[m
+[33mcf663f6[m first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch testing[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit tag -d v1
+Deleted tag 'v1' (was 85a3843)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git tag -d v1log --oneline --decorate
+[?1h=[33m58a59da[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mtesting[m[33m)[m new file added[m
+[33mcf663f6[m first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch testing
+fatal: A branch named 'testing' already exists.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch testinglog --oneline --decorate
+[?1h=[33m58a59da[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mtesting[m[33m)[m new file added[m
+[33mcf663f6[m first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout testing
+Switched to branch 'testing'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ touch [K[K[K[K[K[Knano test
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                          test                                    [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2dt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: test                                                        [22;1H(B[m[22;25H[?12l[?25h[?25l[22;33H[1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;33H(B[0;7m[ Wrote 1 line ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2;20H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch testing
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtest[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit a [K[K-a -m " added a[Ktest file in new branc h"
+On branch testing
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtest[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .commit -a -m " added test file in new branch"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -m " added test file in new branch"[K[A(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ [C[C[C[C[C[C[C[C[C[C[C[C -m " added test file in new branch" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[testing d89a7cd]  added test file in new branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch testing
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git chj[Keckout master
+error: pathspec 'master' did not match any file(s) known to git
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout master[K[K[K[Kin
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log
+[?1h=[33mcommit d8ca06082d8fdf01fd124c444c633b0db1eca1d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;33mtag: tg[m[33m, [m[1;33mtag: lw[m[33m,[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;33m[m[33m [m[1;31morigin/main[m[33m)[m[m
+Merge: 85cc32f 8ba27a2[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 16:06:16 2022 +0530[m
+[m
+    Merge branch 'main' of github.com:GattuRushishwar/git_assign into main[m
+[m
+[33mcommit 85cc32fe586e28821beab01162f458628d8ca33a[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 16:04:56 2022 +0530[m
+[m
+    unstaged and staged[m
+[m
+[33mcommit 2b2d75916b1c1c07e9bf6ded9d2d3b573b49dbd5[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:36:11 2022 +0530[m
+[m
+    renamed a file and deleted temp.txt[m
+[m
+[33mcommit 8ba27a244ea4c9d6fb595401ff61c4d8a36ca53e[m[m
+Author: GattuRushishwar <rushishwargattu@gmail.com>[m
+Date:   Sat Jan 29 15:36:11 2022 +0530[m
+:[K[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano file.txt 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 5 lines ](B[m[H(B[0;7m  GNU nano 4.8                        file.txt                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3;2H[39;49m(B[mthis is a text file[4dthis is a line[2d[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m7[2;21r8[2dM[1;24r[3;1H[?12l[?25h[?25l[2;21r[2;1HM[1;24r[4;1H[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: file.txt                                                    [22;1H(B[m[22;29H[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 7 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[4d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add[K[K[Kcommit -a -m "added spaces"
+[main 4127ddf] added spaces
+ 1 file changed, 2 insertions(+)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git log --oneline --decorate --graph --all
+[?1h=* [33m4127ddf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m added spaces[m
+*   [33md8ca060[m[33m ([m[1;33mtag: tg[m[33m, [m[1;33mtag: lw[m[33m, [m[1;31morigin/main[m[33m)[m Merge branch 'main' of github.com:Ga[m [33m[m[33m[m[1;33m[m[33m[m[1;33m[m[33m[m[1;31m[m[33m[mttuRushishwar/git_assign into main[m
+[32m|[m[33m\[m  [m
+[32m|[m * [33m8ba27a2[m renamed a file and deleted temp.txt[m
+* [33m|[m [33m85cc32f[m unstaged and staged[m
+* [33m|[m [33m2b2d759[m renamed a file and deleted temp.txt[m
+[33m|[m[33m/[m  [m
+* [33m4273ea9[m added a temp file[m
+* [33mb4abef4[m added a temp file[m
+* [33m592eb94[m made changes[m
+* [33m33f4468[m added .gitignore file[m
+* [33m036bcd2[m added another line in file[m
+[33m|[m * [33md89a7cd[m[33m ([m[1;32mtesting[m[33m)[m  added test file in new branch[m
+[33m|[m[33m/[m  [m
+* [33m58a59da[m new file added[m
+* [33mcf663f6[m first commit[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git merge testing
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 6 lines ](B[m[H(B[0;7m  GNU nano 4.8         /home/rushi/git_assign/.git/MERGE_MSG                    [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[mMerge branch 'testing' into main[3d[36m# Please enter a commit message to explain why this merge is necessary,[4d# especially if it merges an updated upstream into a topic branch.[5d#[6d# Lines starting with '#' will be ignored, and an empty message aborts[7d# the commit.[2d[39m(B[m[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: /home/rushi/git_assign/.git/MERGE_MSG                       [22;1H(B[m[22;58H[?12l[?25h[?25l[22;33H[1K (B[0;7m[ Writing... ](B[m[K[1;79H[22;32H(B[0;7m[ Wrote 6 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[KMerge made by the 'recursive' strategy.
+ test | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push[K[K[K[Kstatus
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 12, done.
+Counting objects:   8% (1/12)Counting objects:  16% (2/12)Counting objects:  25% (3/12)Counting objects:  33% (4/12)Counting objects:  41% (5/12)Counting objects:  50% (6/12)Counting objects:  58% (7/12)Counting objects:  66% (8/12)Counting objects:  75% (9/12)Counting objects:  83% (10/12)Counting objects:  91% (11/12)Counting objects: 100% (12/12)Counting objects: 100% (12/12), done.
+Delta compression using up to 2 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 900 bytes | 450.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To github.com:GattuRushishwar/git_assign.git
+   d8ca060..181993d  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git[K[K[Kgit branch -d testing
+Deleted branch testing (was d89a7cd).
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Everything up-to-date
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git git [K[K[K[Kcheckout -b iss53
+Switched to a new branch 'iss53'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano inde[K[Kdex.html
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                       index.html                                 [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2dt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lt[?12l[?25h[?25lm[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: index.html                                                  [22;1H(B[m[22;31H[?12l[?25h[?25l  [1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;33H(B[0;7m[ Wrote 1 line ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2;21H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch iss53
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mindex.html[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "created new html"
+[iss53 63419e7] created new html
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout masin[K[K[Kin
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout hotfli[K[Kix[K[K[K[K[K[K-b hotfix
+Switched to a new branch 'hotfix'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ nano  index.html
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                       index.html                                 [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2dt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lt[?12l[?25h[?25lm[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[22d[K[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: index.html                                                  [22;1H(B[m[22;31H[?12l[?25h[?25l[22;31H[?12l[?25h[?25l[22;31H[?12l[?25h[?25l[1K (B[0;7m[ Writing to FIFO... ](B[m[K[22;30H    (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m        (B[m[22;33H(B[0;7m[ Wrote 1 line ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2;26H[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch -d hotfix
+error: Cannot delete branch 'hotfix' checked out at '/home/rushi/git_assign'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git [K[K[K[Kgit checkout master[K[K[K[Kin
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git merge mai[K[K[Khotfix
+Already up to date.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ g[Kgit merge hotfixcheckout mainsterbranch -d hotfix
+Deleted branch hotfix (was 181993d).
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout iss53
+error: The following untracked working tree files would be overwritten by checkout:
+	index.html
+Please move or remove them before you switch branches.
+Aborting
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mindex.html[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "new file added"
+[main d781538] new file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "new file added"add .[Kstatuscheckout iss53
+Switched to branch 'iss53'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git status
+On branch iss53
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git statuscheckout iss53[K[K[K[K[Kmain
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git merge iss53
+CONFLICT (add/add): Merge conflict in index.html
+Auto-merging index.html
+Automatic merge failed; fix conflicts and then commit the result.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:GattuRushishwar/git_assign.git
+   181993d..d781538  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git pushmerge iss53
+error: Merging is not possible because you have unmerged files.
+[33mhint: Fix them up in the work tree, and then use 'git add/rm <file>'[m
+[33mhint: as appropriate to mark resolution and make a commit.[m
+fatal: Exiting because of an unresolved conflict.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git -d iss [K53
+unknown option: -d
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git -d iss53[C[C[1@ [1@b[1@r[1@a[1@n[1@c[1@h[C[1@ 
+error: The branch 'iss53' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D iss53'.
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch  -d iss53[1P[C[1P iss53- iss53D iss53
+Deleted branch iss53 (was 63419e7).
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git checkout
+index.html: needs merge
+error: you need to resolve your current index first
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git r,[Km index.html 
+rm 'index.html'
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git add .
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git commit -m "made changes"
+[main 13f7017] made changes
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 483 bytes | 483.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:GattuRushishwar/git_assign.git
+   d781538..13f7017  main -> main
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch
+[?1h=* [32mmain[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch nbr
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch nbr[K
+[?1h=* [32mmain[m[m
+  nbr[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch --move nbr testbranch
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch --move nbr testbranch[K
+[?1h=* [32mmain[m[m
+  testbranch[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push origin --delete nbr
+error: unable to delete 'nbr': remote ref does not exist
+[31merror: failed to push some refs to 'git@github.com:GattuRushishwar/git_assign.git'
+[m(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push origin --delete nbrbranch[K --all
+[?1h=* [32mmain[m[m
+  testbranch[m[m
+  [31mremotes/origin/main[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push --set-upstream origin main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push --set-upstream origin main[19Pbranch --all
+[?1h=* [32mmain[m[m
+  testbranch[m[m
+  [31mremotes/origin/main[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch --allpush --set-upstream origin main[19Pbranch --allpush origin --delete nbr
+error: unable to delete 'nbr': remote ref does not exist
+[31merror: failed to push some refs to 'git@github.com:GattuRushishwar/git_assign.git'
+[m(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+Everything up-to-date
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch
+[?1h=* [32mmain[m[m
+  testbranch[m[m
+[K[?1l>(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git branch -d testbranvh[K[Kch
+Deleted branch testbranch (was 13f7017).
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ gii[Kt status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ git push
+3 
+Everything up-to-date
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ 
+(base) ]0;rushi@rushi: ~/git_assign[01;32mrushi@rushi[00m:[01;34m~/git_assign[00m$ EXIT[K[K[K[Kxit[K[K[Kexit
+exit
+
+Script done on 2022-01-29 17:10:37+05:30 [COMMAND_EXIT_CODE="0"]
